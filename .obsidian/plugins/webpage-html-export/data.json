@@ -28,7 +28,7 @@
   "addRSSFeed": true,
   "siteURL": "",
   "authorName": "",
-  "vaultTitle": "GodotTutorial",
+  "vaultTitle": "Godot Proof Of Concept",
   "exportPreset": "website",
   "openAfterExport": false,
   "graphAttractionForce": 1,
@@ -45,6 +45,9 @@
   "defaultMediaIcon": "lucide//file-image",
   "exportPath": "/var/home/sunnyayyl/Documents/GodotProofOfConcept/docs",
   "filesToExport": [
-    []
+    [
+      "Getting Started.md",
+      "Index.md"
+    ]
   ]
 }

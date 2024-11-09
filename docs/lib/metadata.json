@@ -1,46 +1,13 @@
 {
-  "vaultName": "GodotTutorial",
-  "lastExport": 1731158074516,
+  "vaultName": "Godot Proof Of Concept",
+  "lastExport": 1731159111310,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
     "Getting Started.md",
-    "screenshot-from-2024-11-08-20-34-13.png",
-    "screenshot-from-2024-11-08-20-35-37.png",
-    "pasted-image-20241108203719.png",
-    "pasted-image-20241108204418.png",
-    "pasted-image-20241108204726.png",
-    "pasted-image-20241108204921.png",
-    "pasted-image-20241108205025.png",
-    "pasted-image-20241108205356.png",
-    "pasted-image-20241108205513.png",
-    "pasted-image-20241108205803.png",
-    "pasted-image-20241108205816.png",
-    "pasted-image-20241108205905.png",
-    "pasted-image-20241108210119.png",
-    "pasted-image-20241108210211.png",
-    "pasted-image-20241108210338.png",
-    "pasted-image-20241108210441.png",
-    "pasted-image-20241108210535.png",
-    "pasted-image-20241108210643.png",
-    "pasted-image-20241108211047.png",
-    "pasted-image-20241108211159.png",
-    "pasted-image-20241108211319.png",
-    "pasted-image-20241108211402.png",
-    "screenshot-from-2024-11-08-21-16-48.png",
-    "pasted-image-20241108211734.png",
-    "pasted-image-20241108211912.png",
-    "pasted-image-20241108211856.png",
-    "pasted-image-20241108212119.png",
-    "pasted-image-20241108212132.png",
-    "pasted-image-20241108225452.png",
-    "pasted-image-20241108230326.png",
-    "pasted-image-20241108230711.png",
-    "pasted-image-20241108230843.png",
-    "pasted-image-20241108230902.png",
-    "pasted-image-20241108231017.png",
+    "Index.md",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -68,7 +35,40 @@
     "lib/scripts/graph-data.js",
     "lib/styles/obsidian.css",
     "lib/styles/global-variable-styles.css",
-    "lib/styles/main-styles.css"
+    "lib/styles/main-styles.css",
+    "images/screenshot-from-2024-11-08-20-34-13.png",
+    "images/screenshot-from-2024-11-08-20-35-37.png",
+    "images/editorwindow.png",
+    "images/scenetab.png",
+    "images/scenetreewithsinglenode2d.png",
+    "images/inspectortabfornode2d.png",
+    "images/node2dsignal.png",
+    "images/renamednode2dasworld.png",
+    "images/savescene.png",
+    "images/scenetabsmall.png",
+    "images/newnode.png",
+    "images/charaterbody2d.png",
+    "images/scenetreewithcharaterbody2d.png",
+    "images/missingcollisionshape.png",
+    "images/collisionshape2d.png",
+    "images/sprite2d.png",
+    "images/newscenetreewithspriteandcollsionshape.png",
+    "images/missingshape.png",
+    "images/filesystemtab.png",
+    "images/newwindowwithsprite.png",
+    "images/collisionshapeshapeinspetor.png",
+    "images/completedplayereditorwindow.png",
+    "images/screenshot-from-2024-11-08-21-16-48.png",
+    "images/changingcollisionshapeshape.png",
+    "images/attatchscript.png",
+    "images/attatchgdscript.png",
+    "images/attatchcsharp.png",
+    "images/godotcsharpide.png",
+    "images/riderwelcomewindow.png",
+    "images/contextmenu.png",
+    "images/riderwindow.png",
+    "images/solutiontab.png",
+    "images/riderandcode.png"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -102,414 +102,413 @@
   ],
   "fileInfo": {
     "Getting Started.md": {
-      "modifiedTime": 1731158074516,
-      "sourceSize": 7035,
+      "modifiedTime": 1731158940841,
+      "sourceSize": 6719,
       "exportedPath": "getting-started.html",
       "dependencies": [
-        "screenshot-from-2024-11-08-20-34-13.png",
-        "screenshot-from-2024-11-08-20-35-37.png",
-        "pasted-image-20241108203719.png",
-        "pasted-image-20241108204418.png",
-        "pasted-image-20241108204726.png",
-        "pasted-image-20241108204921.png",
-        "pasted-image-20241108205025.png",
-        "pasted-image-20241108205356.png",
-        "pasted-image-20241108205513.png",
-        "pasted-image-20241108205803.png",
-        "pasted-image-20241108205816.png",
-        "pasted-image-20241108205905.png",
-        "pasted-image-20241108210119.png",
-        "pasted-image-20241108210211.png",
-        "pasted-image-20241108210338.png",
-        "pasted-image-20241108210441.png",
-        "pasted-image-20241108210535.png",
-        "pasted-image-20241108210643.png",
-        "pasted-image-20241108211047.png",
-        "pasted-image-20241108211159.png",
-        "pasted-image-20241108211319.png",
-        "pasted-image-20241108211402.png",
-        "screenshot-from-2024-11-08-21-16-48.png",
-        "pasted-image-20241108211734.png",
-        "pasted-image-20241108211912.png",
-        "pasted-image-20241108211856.png",
-        "pasted-image-20241108212119.png",
-        "pasted-image-20241108212132.png",
-        "pasted-image-20241108225452.png",
-        "pasted-image-20241108230326.png",
-        "pasted-image-20241108230711.png",
-        "pasted-image-20241108230843.png",
-        "pasted-image-20241108230902.png",
-        "pasted-image-20241108231017.png"
+        "images/screenshot-from-2024-11-08-20-34-13.png",
+        "images/screenshot-from-2024-11-08-20-35-37.png",
+        "images/editorwindow.png",
+        "images/scenetab.png",
+        "images/scenetreewithsinglenode2d.png",
+        "images/inspectortabfornode2d.png",
+        "images/node2dsignal.png",
+        "images/renamednode2dasworld.png",
+        "images/savescene.png",
+        "images/scenetabsmall.png",
+        "images/newnode.png",
+        "images/charaterbody2d.png",
+        "images/scenetreewithcharaterbody2d.png",
+        "images/missingcollisionshape.png",
+        "images/collisionshape2d.png",
+        "images/sprite2d.png",
+        "images/newscenetreewithspriteandcollsionshape.png",
+        "images/missingshape.png",
+        "images/filesystemtab.png",
+        "images/newwindowwithsprite.png",
+        "images/collisionshapeshapeinspetor.png",
+        "images/completedplayereditorwindow.png",
+        "images/screenshot-from-2024-11-08-21-16-48.png",
+        "images/changingcollisionshapeshape.png",
+        "images/attatchscript.png",
+        "images/attatchgdscript.png",
+        "images/attatchcsharp.png",
+        "images/godotcsharpide.png",
+        "images/riderwelcomewindow.png",
+        "images/contextmenu.png",
+        "images/riderwindow.png",
+        "images/solutiontab.png",
+        "images/riderandcode.png"
       ]
     },
-    "screenshot-from-2024-11-08-20-34-13.png": {
-      "modifiedTime": 1731158074516,
+    "Index.md": {
+      "modifiedTime": 1731158940841,
+      "sourceSize": 96,
+      "exportedPath": "index.html",
+      "dependencies": []
+    },
+    "images/screenshot-from-2024-11-08-20-34-13.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 77399,
-      "exportedPath": "screenshot-from-2024-11-08-20-34-13.png",
+      "exportedPath": "images/screenshot-from-2024-11-08-20-34-13.png",
       "dependencies": []
     },
-    "screenshot-from-2024-11-08-20-35-37.png": {
-      "modifiedTime": 1731158074516,
+    "images/screenshot-from-2024-11-08-20-35-37.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 63274,
-      "exportedPath": "screenshot-from-2024-11-08-20-35-37.png",
+      "exportedPath": "images/screenshot-from-2024-11-08-20-35-37.png",
       "dependencies": []
     },
-    "pasted-image-20241108203719.png": {
-      "modifiedTime": 1731158074516,
+    "images/editorwindow.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 914875,
-      "exportedPath": "pasted-image-20241108203719.png",
+      "exportedPath": "images/editorwindow.png",
       "dependencies": []
     },
-    "pasted-image-20241108204418.png": {
-      "modifiedTime": 1731158074516,
+    "images/scenetab.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 15387,
-      "exportedPath": "pasted-image-20241108204418.png",
+      "exportedPath": "images/scenetab.png",
       "dependencies": []
     },
-    "pasted-image-20241108204726.png": {
-      "modifiedTime": 1731158074516,
+    "images/scenetreewithsinglenode2d.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 79820,
-      "exportedPath": "pasted-image-20241108204726.png",
+      "exportedPath": "images/scenetreewithsinglenode2d.png",
       "dependencies": []
     },
-    "pasted-image-20241108204921.png": {
-      "modifiedTime": 1731158074516,
+    "images/inspectortabfornode2d.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 29986,
-      "exportedPath": "pasted-image-20241108204921.png",
+      "exportedPath": "images/inspectortabfornode2d.png",
       "dependencies": []
     },
-    "pasted-image-20241108205025.png": {
-      "modifiedTime": 1731158074516,
+    "images/node2dsignal.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 39244,
-      "exportedPath": "pasted-image-20241108205025.png",
+      "exportedPath": "images/node2dsignal.png",
       "dependencies": []
     },
-    "pasted-image-20241108205356.png": {
-      "modifiedTime": 1731158074516,
+    "images/renamednode2dasworld.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 105225,
-      "exportedPath": "pasted-image-20241108205356.png",
+      "exportedPath": "images/renamednode2dasworld.png",
       "dependencies": []
     },
-    "pasted-image-20241108205513.png": {
-      "modifiedTime": 1731158074516,
+    "images/savescene.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 30735,
-      "exportedPath": "pasted-image-20241108205513.png",
+      "exportedPath": "images/savescene.png",
       "dependencies": []
     },
-    "pasted-image-20241108205803.png": {
-      "modifiedTime": 1731158074516,
+    "images/scenetabsmall.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 4423,
-      "exportedPath": "pasted-image-20241108205803.png",
+      "exportedPath": "images/scenetabsmall.png",
       "dependencies": []
     },
-    "pasted-image-20241108205816.png": {
-      "modifiedTime": 1731158074516,
+    "images/newnode.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 60347,
-      "exportedPath": "pasted-image-20241108205816.png",
+      "exportedPath": "images/newnode.png",
       "dependencies": []
     },
-    "pasted-image-20241108205905.png": {
-      "modifiedTime": 1731158074516,
+    "images/charaterbody2d.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 49859,
-      "exportedPath": "pasted-image-20241108205905.png",
+      "exportedPath": "images/charaterbody2d.png",
       "dependencies": []
     },
-    "pasted-image-20241108210119.png": {
-      "modifiedTime": 1731158074516,
+    "images/scenetreewithcharaterbody2d.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 9410,
-      "exportedPath": "pasted-image-20241108210119.png",
+      "exportedPath": "images/scenetreewithcharaterbody2d.png",
       "dependencies": []
     },
-    "pasted-image-20241108210211.png": {
-      "modifiedTime": 1731158074516,
+    "images/missingcollisionshape.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 23906,
-      "exportedPath": "pasted-image-20241108210211.png",
+      "exportedPath": "images/missingcollisionshape.png",
       "dependencies": []
     },
-    "pasted-image-20241108210338.png": {
-      "modifiedTime": 1731158074516,
+    "images/collisionshape2d.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 52546,
-      "exportedPath": "pasted-image-20241108210338.png",
+      "exportedPath": "images/collisionshape2d.png",
       "dependencies": []
     },
-    "pasted-image-20241108210441.png": {
-      "modifiedTime": 1731158074516,
+    "images/sprite2d.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 43575,
-      "exportedPath": "pasted-image-20241108210441.png",
+      "exportedPath": "images/sprite2d.png",
       "dependencies": []
     },
-    "pasted-image-20241108210535.png": {
-      "modifiedTime": 1731158074516,
+    "images/newscenetreewithspriteandcollsionshape.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 13612,
-      "exportedPath": "pasted-image-20241108210535.png",
+      "exportedPath": "images/newscenetreewithspriteandcollsionshape.png",
       "dependencies": []
     },
-    "pasted-image-20241108210643.png": {
-      "modifiedTime": 1731158074516,
+    "images/missingshape.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 19268,
-      "exportedPath": "pasted-image-20241108210643.png",
+      "exportedPath": "images/missingshape.png",
       "dependencies": []
     },
-    "pasted-image-20241108211047.png": {
-      "modifiedTime": 1731158074516,
+    "images/filesystemtab.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 11285,
-      "exportedPath": "pasted-image-20241108211047.png",
+      "exportedPath": "images/filesystemtab.png",
       "dependencies": []
     },
-    "pasted-image-20241108211159.png": {
-      "modifiedTime": 1731158074516,
+    "images/newwindowwithsprite.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 136090,
-      "exportedPath": "pasted-image-20241108211159.png",
+      "exportedPath": "images/newwindowwithsprite.png",
       "dependencies": []
     },
-    "pasted-image-20241108211319.png": {
-      "modifiedTime": 1731158074516,
+    "images/collisionshapeshapeinspetor.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 14080,
-      "exportedPath": "pasted-image-20241108211319.png",
+      "exportedPath": "images/collisionshapeshapeinspetor.png",
       "dependencies": []
     },
-    "pasted-image-20241108211402.png": {
-      "modifiedTime": 1731158074516,
+    "images/completedplayereditorwindow.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 156531,
-      "exportedPath": "pasted-image-20241108211402.png",
+      "exportedPath": "images/completedplayereditorwindow.png",
       "dependencies": []
     },
-    "screenshot-from-2024-11-08-21-16-48.png": {
-      "modifiedTime": 1731158074516,
+    "images/screenshot-from-2024-11-08-21-16-48.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 304,
-      "exportedPath": "screenshot-from-2024-11-08-21-16-48.png",
+      "exportedPath": "images/screenshot-from-2024-11-08-21-16-48.png",
       "dependencies": []
     },
-    "pasted-image-20241108211734.png": {
-      "modifiedTime": 1731158074516,
+    "images/changingcollisionshapeshape.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 176308,
-      "exportedPath": "pasted-image-20241108211734.png",
+      "exportedPath": "images/changingcollisionshapeshape.png",
       "dependencies": []
     },
-    "pasted-image-20241108211912.png": {
-      "modifiedTime": 1731158074516,
+    "images/attatchscript.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 311,
-      "exportedPath": "pasted-image-20241108211912.png",
+      "exportedPath": "images/attatchscript.png",
       "dependencies": []
     },
-    "pasted-image-20241108211856.png": {
-      "modifiedTime": 1731158074516,
-      "sourceSize": 4409,
-      "exportedPath": "pasted-image-20241108211856.png",
-      "dependencies": []
-    },
-    "pasted-image-20241108212119.png": {
-      "modifiedTime": 1731158074516,
+    "images/attatchgdscript.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 45547,
-      "exportedPath": "pasted-image-20241108212119.png",
+      "exportedPath": "images/attatchgdscript.png",
       "dependencies": []
     },
-    "pasted-image-20241108212132.png": {
-      "modifiedTime": 1731158074516,
+    "images/attatchcsharp.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 45061,
-      "exportedPath": "pasted-image-20241108212132.png",
+      "exportedPath": "images/attatchcsharp.png",
       "dependencies": []
     },
-    "pasted-image-20241108225452.png": {
-      "modifiedTime": 1731158074516,
+    "images/godotcsharpide.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 251239,
-      "exportedPath": "pasted-image-20241108225452.png",
+      "exportedPath": "images/godotcsharpide.png",
       "dependencies": []
     },
-    "pasted-image-20241108230326.png": {
-      "modifiedTime": 1731158074516,
+    "images/riderwelcomewindow.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 48826,
-      "exportedPath": "pasted-image-20241108230326.png",
+      "exportedPath": "images/riderwelcomewindow.png",
       "dependencies": []
     },
-    "pasted-image-20241108230711.png": {
-      "modifiedTime": 1731158074516,
+    "images/contextmenu.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 8702,
-      "exportedPath": "pasted-image-20241108230711.png",
+      "exportedPath": "images/contextmenu.png",
       "dependencies": []
     },
-    "pasted-image-20241108230843.png": {
-      "modifiedTime": 1731158074516,
+    "images/riderwindow.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 81748,
-      "exportedPath": "pasted-image-20241108230843.png",
+      "exportedPath": "images/riderwindow.png",
       "dependencies": []
     },
-    "pasted-image-20241108230902.png": {
-      "modifiedTime": 1731158074516,
+    "images/solutiontab.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 12597,
-      "exportedPath": "pasted-image-20241108230902.png",
+      "exportedPath": "images/solutiontab.png",
       "dependencies": []
     },
-    "pasted-image-20241108231017.png": {
-      "modifiedTime": 1731158074516,
+    "images/riderandcode.png": {
+      "modifiedTime": 1731158940841,
       "sourceSize": 160167,
-      "exportedPath": "pasted-image-20241108231017.png",
+      "exportedPath": "images/riderandcode.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1731158074516,
-      "sourceSize": 987,
+      "modifiedTime": 1731159111310,
+      "sourceSize": 1298,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1731158074516,
-      "sourceSize": 286,
+      "modifiedTime": 1731159111310,
+      "sourceSize": 308,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 131010,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1731158074516,
+      "modifiedTime": 1731159111310,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []

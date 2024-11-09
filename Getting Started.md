@@ -19,81 +19,81 @@ If you haven't used Godot before, you'll see the screen below:
 Press the `+ Create` button on the toolbar to create a new project. A pop-up will appears as follow:
 ![[Screenshot From 2024-11-08 20-35-37.png]]
 Set the desired project name and project path, then press `Create & Edit`.
-![[Pasted image 20241108203719.png]]
+![[EditorWindow.png]]
 # Godot Basics
 > Check out the [offical documentation on the key concepts](https://docs.godotengine.org/en/stable/getting_started/introduction/key_concepts_overview.html)
 # An Example
 ## The beginning
 First, create a 2D scene
-![[Pasted image 20241108204418.png]]
+![[SceneTab.png]]
 Your screen should looks like this
-![[Pasted image 20241108204726.png]]
+![[SceneTreeWithSingleNode2D.png]]
 Clicking on the `Node2D` will populate your `Inspector` menu
-![[Pasted image 20241108204921.png]]
+![[InspectorTabForNode2D.png]]
 These are property of the node that can be changed in the editor. By clicking on the `Node` tab, the content will change to the following: 
-![[Pasted image 20241108205025.png]]
+![[Node2DSignal.png]]
 These are signal, they are used to do event-driven programming. Which will be used later.
 We can rename the node by double clicking on the `Node2D` on the Scene list.
-![[Pasted image 20241108205356.png]]
+![[RenamedNode2DAsWorld.png]]
 I've renamed it to World
 Press `Ctrl-s` to save the scene.
-![[Pasted image 20241108205513.png]]
+![[SaveScene.png]]
 ## The player
 ### Nodes
 We can add new node by clicking on the `+` button on the `Scene` tab
-![[Pasted image 20241108205803.png]]
-![[Pasted image 20241108205816.png]]
+![[SceneTabSmall.png]]
+![[NewNode.png]]
 A collection of node is available here, for the player, we'll use the `CharaterBody2D`
-![[Pasted image 20241108205905.png]]
-![[Pasted image 20241108210119.png]]
+![[CharaterBody2D.png]]
+![[SceneTreeWithCharaterBody2D.png]]
 A new node will pop up in the scene tree, and the editor nicely warned us about the lack of `CollisionShape`.
-![[Pasted image 20241108210211.png]]
+![[MissingCollisionShape.png]]
 We can fix this warning by click on the `CharaterBody2D` and press the `+` button to add a new child node. 
-![[Pasted image 20241108210338.png]]
+![[CollisionShape2D.png]]
 Add a new `CollisionShape2D`, and then, add a `Sprite2D` too while we're at it.
-![[Pasted image 20241108210441.png]]
+![[Sprite2D.png]]
 The scene tree should now looks as follow:
-![[Pasted image 20241108210535.png]]
+![[NewSceneTreeWIthSpriteAndCollsionShape.png]]
 _And another warning_
-![[Pasted image 20241108210643.png]]This time, we have to create a shape for the `CollisionShape2D` node. But before fixing it, we should give the sprite a image.
+![[MissingShape.png]]This time, we have to create a shape for the `CollisionShape2D` node. But before fixing it, we should give the sprite a image.
 We'll used the Godot icon for the player, and to use it as a sprite texture, we can drag the `icon.svg` in `FileSystem` tab 
-![[Pasted image 20241108211047.png]]
+![[FileSystemTab.png]]
 into the `Texture` property in the `Inspector` tab
-![[Pasted image 20241108211159.png]]
+![[NewWindowWithSprite.png]]
 Your screen should now looks like this. We can now give our player its collision shape. Click on the `Collision2D` node and go to the shape property in the `Inspector` tab
-![[Pasted image 20241108211319.png]]
+![[CollisionShapeShapeInspetor.png]]
 Select the `RectangleShape2D`
-![[Pasted image 20241108211402.png]]
+![[CompletedPlayerEditorWindow.png]]
 A blue collision box should now appear in the editor, resize it to fit the size of the icon.
 
 > [!hint] Snapping
 > Enable `Grid Snapping` ![[Screenshot From 2024-11-08 21-16-48.png]] to help with fitting the box onto the icon
 
-![[Pasted image 20241108211734.png]]
+![[ChangingCollisionShapeShape.png]]
 ### Code
-Now, we can actually start programming. To attach a script onto the player **click on the `CharaterBody2D` node**, then, press the attach script button on the `Scene` tab![[Pasted image 20241108211912.png]]
+Now, we can actually start programming. To attach a script onto the player **click on the `CharaterBody2D` node**, then, press the attach script button on the `Scene` tab![[AttatchScript.png]]
 ![[Pasted image 20241108211856.png]]
-![[Pasted image 20241108212119.png]]
+![[AttatchGDScript.png]]
 A pop-up will now appears, change the language to `C#` as follow:
-![[Pasted image 20241108212132.png]]
-![[Pasted image 20241108225452.png]]
+![[AttatchCSharp.png]]
+![[GodotCSharpIDE.png]]
 #### IDE
 Godot have minimal C# support, so we'll do the C# programming on an external IDE, and in my case, Rider.
-![[Pasted image 20241108230326.png]]
+![[RiderWelcomeWindow.png]]
 Your screen should looks similar to this, I've applied some plugin, for cosmetic purposes, so free free to play around with the setting. 
 But more importantly, we now need to open the solution where the Godot project is located.
 
 > [!tip] Forgot where your Godot project is?
 > Go back to Godot and look for thr `FileSystem` tab and right click
-> ![[Pasted image 20241108230711.png]]
+> ![[ContextMenu.png]]
 > Choose `Open in File Manager`
 > You can now see where the Godot project is located in
 
 After opening the project you will see the following screen
-![[Pasted image 20241108230843.png]]
-![[Pasted image 20241108230902.png]]
+![[RiderWIndow.png]]
+![[SolutionTab.png]]
 Select the `CharaterBody2d.cs` 
-![[Pasted image 20241108231017.png]]
+![[RiderAndCode.png]]
 #### The actual code
 This is the built in template code for a `CharacterBody2D`
 ```c#

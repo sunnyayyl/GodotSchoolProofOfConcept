@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[GodotTutorial]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>GodotTutorial</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 09 Nov 2024 13:14:35 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 09 Nov 2024 13:14:34 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Installation]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Godot Proof Of Concept]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Godot Proof Of Concept</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 09 Nov 2024 13:31:51 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 09 Nov 2024 13:31:51 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Installation]]></title><description><![CDATA[ 
  <br><br><br>Godot 4 can be downloaded from the <a data-tooltip-position="top" aria-label="https://godotengine.org/download" rel="noopener nofollow" class="external-link" href="https://godotengine.org/download" target="_blank">Godot website</a>.<br>C# support
 In order to use C# alongside Godot, the .NET version is required
 <br>Other distribution method
@@ -6,69 +6,69 @@ Despite Godot is available on <a data-tooltip-position="top" aria-label="https:/
 <br><br>You can use any IDE that support C#, including Visual Studio Code, but I personally prefer Rider. It is recommended to download <a data-tooltip-position="top" aria-label="https://www.jetbrains.com/toolbox-app/" rel="noopener nofollow" class="external-link" href="https://www.jetbrains.com/toolbox-app/" target="_blank">Jetbrains Toolbox</a> to manage all your Jetbrains IDE.<br>Free Educational Licenses
 Student and teacher can obtain <a data-tooltip-position="top" aria-label="https://www.jetbrains.com/community/education/#students/" rel="noopener nofollow" class="external-link" href="https://www.jetbrains.com/community/education/#students/" target="_blank">free licence</a> to use Jetbrains IDE, but Rider is now free for non-commercial use.
 <br><br>If you haven't used Godot before, you'll see the screen below:<br>
-<img alt="Screenshot From 2024-11-08 20-34-13.png" src="screenshot-from-2024-11-08-20-34-13.png"><br>
+<img alt="Screenshot From 2024-11-08 20-34-13.png" src="images/screenshot-from-2024-11-08-20-34-13.png"><br>
 Press the + Create button on the toolbar to create a new project. A pop-up will appears as follow:<br>
-<img alt="Screenshot From 2024-11-08 20-35-37.png" src="screenshot-from-2024-11-08-20-35-37.png"><br>
+<img alt="Screenshot From 2024-11-08 20-35-37.png" src="images/screenshot-from-2024-11-08-20-35-37.png"><br>
 Set the desired project name and project path, then press Create &amp; Edit.<br>
-<img alt="Pasted image 20241108203719.png" src="pasted-image-20241108203719.png"><br><br>
+<img alt="EditorWindow.png" src="images/editorwindow.png"><br><br>
 Check out the <a data-tooltip-position="top" aria-label="https://docs.godotengine.org/en/stable/getting_started/introduction/key_concepts_overview.html" rel="noopener nofollow" class="external-link" href="https://docs.godotengine.org/en/stable/getting_started/introduction/key_concepts_overview.html" target="_blank">offical documentation on the key concepts</a>
 <br><br><br>First, create a 2D scene<br>
-<img alt="Pasted image 20241108204418.png" src="pasted-image-20241108204418.png"><br>
+<img alt="SceneTab.png" src="images/scenetab.png"><br>
 Your screen should looks like this<br>
-<img alt="Pasted image 20241108204726.png" src="pasted-image-20241108204726.png"><br>
+<img alt="SceneTreeWithSingleNode2D.png" src="images/scenetreewithsinglenode2d.png"><br>
 Clicking on the Node2D will populate your Inspector menu<br>
-<img alt="Pasted image 20241108204921.png" src="pasted-image-20241108204921.png"><br>
+<img alt="InspectorTabForNode2D.png" src="images/inspectortabfornode2d.png"><br>
 These are property of the node that can be changed in the editor. By clicking on the Node tab, the content will change to the following:<br>
-<img alt="Pasted image 20241108205025.png" src="pasted-image-20241108205025.png"><br>
+<img alt="Node2DSignal.png" src="images/node2dsignal.png"><br>
 These are signal, they are used to do event-driven programming. Which will be used later.<br>
 We can rename the node by double clicking on the Node2D on the Scene list.<br>
-<img alt="Pasted image 20241108205356.png" src="pasted-image-20241108205356.png"><br>
+<img alt="RenamedNode2DAsWorld.png" src="images/renamednode2dasworld.png"><br>
 I've renamed it to World<br>
 Press Ctrl-s to save the scene.<br>
-<img alt="Pasted image 20241108205513.png" src="pasted-image-20241108205513.png"><br><br><br>We can add new node by clicking on the + button on the Scene tab<br>
-<img alt="Pasted image 20241108205803.png" src="pasted-image-20241108205803.png"><br>
-<img alt="Pasted image 20241108205816.png" src="pasted-image-20241108205816.png"><br>
+<img alt="SaveScene.png" src="images/savescene.png"><br><br><br>We can add new node by clicking on the + button on the Scene tab<br>
+<img alt="SceneTabSmall.png" src="images/scenetabsmall.png"><br>
+<img alt="NewNode.png" src="images/newnode.png"><br>
 A collection of node is available here, for the player, we'll use the CharaterBody2D<br>
-<img alt="Pasted image 20241108205905.png" src="pasted-image-20241108205905.png"><br>
-<img alt="Pasted image 20241108210119.png" src="pasted-image-20241108210119.png"><br>
+<img alt="CharaterBody2D.png" src="images/charaterbody2d.png"><br>
+<img alt="SceneTreeWithCharaterBody2D.png" src="images/scenetreewithcharaterbody2d.png"><br>
 A new node will pop up in the scene tree, and the editor nicely warned us about the lack of CollisionShape.<br>
-<img alt="Pasted image 20241108210211.png" src="pasted-image-20241108210211.png"><br>
+<img alt="MissingCollisionShape.png" src="images/missingcollisionshape.png"><br>
 We can fix this warning by click on the CharaterBody2D and press the + button to add a new child node.<br>
-<img alt="Pasted image 20241108210338.png" src="pasted-image-20241108210338.png"><br>
+<img alt="CollisionShape2D.png" src="images/collisionshape2d.png"><br>
 Add a new CollisionShape2D, and then, add a Sprite2D too while we're at it.<br>
-<img alt="Pasted image 20241108210441.png" src="pasted-image-20241108210441.png"><br>
+<img alt="Sprite2D.png" src="images/sprite2d.png"><br>
 The scene tree should now looks as follow:<br>
-<img alt="Pasted image 20241108210535.png" src="pasted-image-20241108210535.png"><br>
+<img alt="NewSceneTreeWIthSpriteAndCollsionShape.png" src="images/newscenetreewithspriteandcollsionshape.png"><br>
 And another warning<br>
-<img alt="Pasted image 20241108210643.png" src="pasted-image-20241108210643.png">This time, we have to create a shape for the CollisionShape2D node. But before fixing it, we should give the sprite a image.<br>
+<img alt="MissingShape.png" src="images/missingshape.png">This time, we have to create a shape for the CollisionShape2D node. But before fixing it, we should give the sprite a image.<br>
 We'll used the Godot icon for the player, and to use it as a sprite texture, we can drag the icon.svg in FileSystem tab<br>
-<img alt="Pasted image 20241108211047.png" src="pasted-image-20241108211047.png"><br>
+<img alt="FileSystemTab.png" src="images/filesystemtab.png"><br>
 into the Texture property in the Inspector tab<br>
-<img alt="Pasted image 20241108211159.png" src="pasted-image-20241108211159.png"><br>
+<img alt="NewWindowWithSprite.png" src="images/newwindowwithsprite.png"><br>
 Your screen should now looks like this. We can now give our player its collision shape. Click on the Collision2D node and go to the shape property in the Inspector tab<br>
-<img alt="Pasted image 20241108211319.png" src="pasted-image-20241108211319.png"><br>
+<img alt="CollisionShapeShapeInspetor.png" src="images/collisionshapeshapeinspetor.png"><br>
 Select the RectangleShape2D<br>
-<img alt="Pasted image 20241108211402.png" src="pasted-image-20241108211402.png"><br>
+<img alt="CompletedPlayerEditorWindow.png" src="images/completedplayereditorwindow.png"><br>
 A blue collision box should now appear in the editor, resize it to fit the size of the icon.<br>Snapping
-Enable Grid Snapping <img alt="Screenshot From 2024-11-08 21-16-48.png" src="screenshot-from-2024-11-08-21-16-48.png"> to help with fitting the box onto the icon
-<br><img alt="Pasted image 20241108211734.png" src="pasted-image-20241108211734.png"><br><br>Now, we can actually start programming. To attach a script onto the player click on the CharaterBody2D node, then, press the attach script button on the Scene tab<img alt="Pasted image 20241108211912.png" src="pasted-image-20241108211912.png"><br>
-<img alt="Pasted image 20241108211856.png" src="pasted-image-20241108211856.png"><br>
-<img alt="Pasted image 20241108212119.png" src="pasted-image-20241108212119.png"><br>
+Enable Grid Snapping <img alt="Screenshot From 2024-11-08 21-16-48.png" src="images/screenshot-from-2024-11-08-21-16-48.png"> to help with fitting the box onto the icon
+<br><img alt="ChangingCollisionShapeShape.png" src="images/changingcollisionshapeshape.png"><br><br>Now, we can actually start programming. To attach a script onto the player click on the CharaterBody2D node, then, press the attach script button on the Scene tab<img alt="AttatchScript.png" src="images/attatchscript.png"><br>
+“Pasted image 20241108211856.png” could not be found.<br>
+<img alt="AttatchGDScript.png" src="images/attatchgdscript.png"><br>
 A pop-up will now appears, change the language to C# as follow:<br>
-<img alt="Pasted image 20241108212132.png" src="pasted-image-20241108212132.png"><br>
-<img alt="Pasted image 20241108225452.png" src="pasted-image-20241108225452.png"><br><br>Godot have minimal C# support, so we'll do the C# programming on an external IDE, and in my case, Rider.<br>
-<img alt="Pasted image 20241108230326.png" src="pasted-image-20241108230326.png"><br>
+<img alt="AttatchCSharp.png" src="images/attatchcsharp.png"><br>
+<img alt="GodotCSharpIDE.png" src="images/godotcsharpide.png"><br><br>Godot have minimal C# support, so we'll do the C# programming on an external IDE, and in my case, Rider.<br>
+<img alt="RiderWelcomeWindow.png" src="images/riderwelcomewindow.png"><br>
 Your screen should looks similar to this, I've applied some plugin, for cosmetic purposes, so free free to play around with the setting.<br>
 But more importantly, we now need to open the solution where the Godot project is located.<br>Forgot where your Godot project is?
 Go back to Godot and look for thr FileSystem tab and right click<br>
-<img alt="Pasted image 20241108230711.png" src="pasted-image-20241108230711.png"><br>
+<img alt="ContextMenu.png" src="images/contextmenu.png"><br>
 Choose Open in File Manager<br>
 You can now see where the Godot project is located in
 <br>After opening the project you will see the following screen<br>
-<img alt="Pasted image 20241108230843.png" src="pasted-image-20241108230843.png"><br>
-<img alt="Pasted image 20241108230902.png" src="pasted-image-20241108230902.png"><br>
+<img alt="RiderWIndow.png" src="images/riderwindow.png"><br>
+<img alt="SolutionTab.png" src="images/solutiontab.png"><br>
 Select the CharaterBody2d.cs<br>
-<img alt="Pasted image 20241108231017.png" src="pasted-image-20241108231017.png"><br><br>This is the built in template code for a CharacterBody2D<br>using Godot;  
+<img alt="RiderAndCode.png" src="images/riderandcode.png"><br><br>This is the built in template code for a CharacterBody2D<br>using Godot;  
 using System;  
   
 public partial class CharacterBody2d : CharacterBody2D  
@@ -105,4 +105,6 @@ _PhysicsProcess is called every physics frame which is by default 60 frame per s
 The rules of thumb would to do everything that involve collision or physics, to make sure physics is consistent even when frame rate differ in _PhysicsProcess
 And thing that need to be done smoothly visually can be put in the _Process<br>
 There's a lot of conversation on the internet about their difference, so feel free to do more research!
-]]></description><link>getting-started.html</link><guid isPermaLink="false">Getting Started.md</guid><pubDate>Sat, 09 Nov 2024 00:09:48 GMT</pubDate><enclosure url="screenshot-from-2024-11-08-20-34-13.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;screenshot-from-2024-11-08-20-34-13.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+]]></description><link>getting-started.html</link><guid isPermaLink="false">Getting Started.md</guid><pubDate>Sat, 09 Nov 2024 13:27:58 GMT</pubDate><enclosure url="images/screenshot-from-2024-11-08-20-34-13.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="images/screenshot-from-2024-11-08-20-34-13.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Index]]></title><description><![CDATA[ 
+ <br>Proof of concept to use Godot with C# over Window Forms<br>
+To start, check out <a data-href="Getting Started" href="getting-started.html" class="internal-link" target="_self" rel="noopener nofollow">Getting Started</a>]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Sat, 09 Nov 2024 13:06:09 GMT</pubDate></item></channel></rss>
