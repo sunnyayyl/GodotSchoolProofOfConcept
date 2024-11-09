@@ -13,7 +13,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Images/AttatchCSharp.png"
+                "file": "images/AttatchCSharp.png"
               },
               "icon": "lucide-image",
               "title": "AttatchCSharp"
@@ -25,7 +25,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Images/AttatchGDScript.png"
+                "file": "images/AttatchGDScript.png"
               },
               "icon": "lucide-image",
               "title": "AttatchGDScript"
@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Getting Started.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Getting Started"
             }
           }
         ],
@@ -164,10 +164,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Index.md"
+                "file": "Getting Started.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Index"
+              "title": "Outline of Getting Started"
             }
           }
         ],
@@ -191,28 +191,28 @@
   },
   "active": "17884ea76ad5c5d1",
   "lastOpenFiles": [
-    "Getting Started.md",
     "Index.md",
-    "docs/images/attatchcsharp.png",
-    "Images/AttatchCSharp.png",
     "docs/lib/search-index.json",
     "docs/lib/metadata.json",
+    "docs/lib/styles/main-styles.css",
+    "docs/lib/styles/global-variable-styles.css",
     "docs/lib/styles/obsidian.css",
     "docs/lib/styles",
-    "docs/lib/html/file-tree.html",
-    "docs/lib/html",
+    "docs/lib/scripts/graph-data.js",
+    "docs/lib/media/favicon.png",
+    "docs/lib/scripts/minisearch.js",
+    "docs/lib/scripts/pixi.js",
+    "docs/lib/scripts/tinycolor.js",
     "docs/lib/media/874d8b8e340f75575caa.svg",
-    "docs/lib/media",
-    "docs/lib/fonts/94f2f163d4b698242fef.otf",
-    "docs/lib/fonts",
-    "docs/lib/scripts/graph-wasm.wasm",
     "docs/images/riderandcode.png",
     "docs/images/solutiontab.png",
     "docs/images/riderwindow.png",
     "docs/images/contextmenu.png",
     "docs/images/riderwelcomewindow.png",
     "docs/images/godotcsharpide.png",
+    "docs/images/attatchcsharp.png",
     "docs/images/attatchgdscript.png",
+    "Getting Started.md",
     "offical.md",
     "Welcome.md"
   ]
