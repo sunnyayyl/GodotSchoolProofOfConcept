@@ -1,4 +1,5 @@
 # Installation
+## Godot
 Godot 4 can be downloaded from the [Godot website](https://godotengine.org/download).
 
 > [!INFO] C# support
@@ -6,6 +7,12 @@ Godot 4 can be downloaded from the [Godot website](https://godotengine.org/downl
 
 > [!WARNING] Other distribution method
 > Despite Godot is available on [Steam](https://store.steampowered.com/app/404790), [Epic Game Store](https://store.epicgames.com/p/godot-engine) and system package manager. But they do not have the C# version, so the official download is recommended.
+## Rider
+You can use any IDE that support C#, including Visual Studio Code, but I personally prefer Rider. It is recommended to download [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/) to manage all your Jetbrains IDE.
+
+> [!important] Free Educational Licenses
+> Student and teacher can obtain [free licence](https://www.jetbrains.com/community/education/#students/) to use Jetbrains IDE, but Rider is now free for non-commercial use.
+
 # Getting started
 If you haven't used Godot before, you'll see the screen below:
 ![[Screenshot From 2024-11-08 20-34-13.png]]
@@ -69,3 +76,65 @@ Now, we can actually start programming. To attach a script onto the player **cli
 ![[Pasted image 20241108212119.png]]
 A pop-up will now appears, change the language to `C#` as follow:
 ![[Pasted image 20241108212132.png]]
+![[Pasted image 20241108225452.png]]
+#### IDE
+Godot have minimal C# support, so we'll do the C# programming on an external IDE, and in my case, Rider.
+![[Pasted image 20241108230326.png]]
+Your screen should looks similar to this, I've applied some plugin, for cosmetic purposes, so free free to play around with the setting. 
+But more importantly, we now need to open the solution where the Godot project is located.
+
+> [!tip] Forgot where your Godot project is?
+> Go back to Godot and look for thr `FileSystem` tab and right click
+> ![[Pasted image 20241108230711.png]]
+> Choose `Open in File Manager`
+> You can now see where the Godot project is located in
+
+After opening the project you will see the following screen
+![[Pasted image 20241108230843.png]]
+![[Pasted image 20241108230902.png]]
+Select the `CharaterBody2d.cs` 
+![[Pasted image 20241108231017.png]]
+#### The actual code
+This is the built in template code for a `CharacterBody2D`
+```c#
+using Godot;  
+using System;  
+  
+public partial class CharacterBody2d : CharacterBody2D  
+{  
+    public const float Speed = 300.0f;  
+    public const float JumpVelocity = -400.0f;  
+  
+    public override void _PhysicsProcess(double delta)  
+    {       Vector2 velocity = Velocity;  
+  
+       // Add the gravity.  
+       if (!IsOnFloor())  
+       {          velocity += GetGravity() * (float)delta;  
+       }  
+       // Handle Jump.  
+       if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())  
+       {          velocity.Y = JumpVelocity;  
+       }  
+       // Get the input direction and handle the movement/deceleration.  
+       // As good practice, you should replace UI actions with custom gameplay actions.       Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");  
+       if (direction != Vector2.Zero)  
+       {          velocity.X = direction.X * Speed;  
+       }       else  
+       {  
+          velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);  
+       }  
+       Velocity = velocity;  
+       MoveAndSlide();  
+    }}
+```
+
+> [!NOTE] Type of process
+> There are 2 type of process `_PhysicsProcess` and `_Process`:
+> `_Process` is called _every frame_
+> `_PhysicsProcess` is called _every physics frame_ which is by default 60 frame per second
+> 
+> The rules of thumb would to do everything that involve collision or physics, to make sure physics is consistent even when frame rate differ in `_PhysicsProcess`
+> 
+> And thing that need to be done smoothly _visually_ can be put in the `_Process`
+> There's a lot of conversation on the internet about their difference, so feel free to do more research!
