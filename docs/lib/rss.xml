@@ -68,35 +68,35 @@ You can now see where the Godot project is located in
 <img alt="images/RiderWIndow.png" src="images/riderwindow.png"><br>
 <img alt="images/SolutionTab.png" src="images/solutiontab.png"><br>
 Select the CharaterBody2d.cs<br>
-<img alt="images/RiderAndCode.png" src="images/riderandcode.png"><br><br>This is the built in template code for a CharacterBody2D<br>using Godot;  
-using System;  
-  
-public partial class CharacterBody2d : CharacterBody2D  
-{  
-    public const float Speed = 300.0f;  
-    public const float JumpVelocity = -400.0f;  
-  
-    public override void _PhysicsProcess(double delta)  
-    {       Vector2 velocity = Velocity;  
-  
-       // Add the gravity.  
-       if (!IsOnFloor())  
-       {          velocity += GetGravity() * (float)delta;  
-       }  
-       // Handle Jump.  
-       if (Input.IsActionJustPressed("ui_accept") &amp;&amp; IsOnFloor())  
-       {          velocity.Y = JumpVelocity;  
-       }  
-       // Get the input direction and handle the movement/deceleration.  
-       // As good practice, you should replace UI actions with custom gameplay actions.       Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");  
-       if (direction != Vector2.Zero)  
-       {          velocity.X = direction.X * Speed;  
-       }       else  
-       {  
-          velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);  
-       }  
-       Velocity = velocity;  
-       MoveAndSlide();  
+<img alt="images/RiderAndCode.png" src="images/riderandcode.png"><br><br>This is the built in template code for a CharacterBody2D<br>using Godot;
+using System;
+
+public partial class CharacterBody2d : CharacterBody2D
+{
+    public const float Speed = 300.0f;
+    public const float JumpVelocity = -400.0f;
+
+    public override void _PhysicsProcess(double delta)
+    {       Vector2 velocity = Velocity;
+
+       // Add the gravity.
+       if (!IsOnFloor())
+       {          velocity += GetGravity() * (float)delta;
+       }
+       // Handle Jump.
+       if (Input.IsActionJustPressed("ui_accept") &amp;&amp; IsOnFloor())
+       {          velocity.Y = JumpVelocity;
+       }
+       // Get the input direction and handle the movement/deceleration.
+       // As good practice, you should replace UI actions with custom gameplay actions.       Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+       if (direction != Vector2.Zero)
+       {          velocity.X = direction.X * Speed;
+       }       else
+       {
+          velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+       }
+       Velocity = velocity;
+       MoveAndSlide();
     }}
 <br>Type of process
 There are 2 type of process _PhysicsProcess and _Process:<br>
@@ -105,6 +105,6 @@ _PhysicsProcess is called every physics frame which is by default 60 frame per s
 The rules of thumb would to do everything that involve collision or physics, to make sure physics is consistent even when frame rate differ in _PhysicsProcess
 And thing that need to be done smoothly visually can be put in the _Process<br>
 There's a lot of conversation on the internet about their difference, so feel free to do more research!
-]]></description><link>getting-started.html</link><guid isPermaLink="false">Getting Started.md</guid><pubDate>Sat, 09 Nov 2024 13:35:52 GMT</pubDate><enclosure url="images/screenshot-from-2024-11-08-20-34-13.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;images/screenshot-from-2024-11-08-20-34-13.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Index]]></title><description><![CDATA[ 
+]]></description><link>getting-started.html</link><guid isPermaLink="false">Getting Started.md</guid><pubDate>Sat, 09 Nov 2024 13:35:52 GMT</pubDate><enclosure url="images/screenshot-from-2024-11-08-20-34-13.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;images/screenshot-from-2024-11-08-20-34-13.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Index]]></title><description><![CDATA[
  <br>Proof of concept to use Godot with C# over Window Forms<br>
 To start, check out <a data-href="Getting Started" href="getting-started.html" class="internal-link" target="_self" rel="noopener nofollow">Getting Started</a>]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Sat, 09 Nov 2024 13:06:09 GMT</pubDate></item></channel></rss>

@@ -27,7 +27,7 @@
   "addTitle": true,
   "addRSSFeed": true,
   "siteURL": "",
-  "authorName": "",
+  "authorName": "Sunny",
   "vaultTitle": "Godot Proof Of Concept",
   "exportPreset": "website",
   "openAfterExport": true,
