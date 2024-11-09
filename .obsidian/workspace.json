@@ -191,8 +191,9 @@
   },
   "active": "17884ea76ad5c5d1",
   "lastOpenFiles": [
-    "docs/images/attatchcsharp.png",
+    "Getting Started.md",
     "Index.md",
+    "docs/images/attatchcsharp.png",
     "Images/AttatchCSharp.png",
     "docs/lib/search-index.json",
     "docs/lib/metadata.json",
@@ -212,8 +213,6 @@
     "docs/images/riderwelcomewindow.png",
     "docs/images/godotcsharpide.png",
     "docs/images/attatchgdscript.png",
-    "docs/images/attatchscript.png",
-    "Getting Started.md",
     "offical.md",
     "Welcome.md"
   ]
