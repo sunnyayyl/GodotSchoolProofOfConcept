@@ -1,1 +1,0 @@
-let graphData={graphOptions:{attractionForce:1,linkLength:10,repulsionForce:150,centralForce:3,edgePruning:100,minNodeRadius:3,maxNodeRadius:7},isInitialized:!0,paths:["getting-started.html","index.html"],nodeCount:2,linkSources:[1],linkTargets:[0],labels:["Getting Started","Index"],radii:[7,7],linkCount:1}
